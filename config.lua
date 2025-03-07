@@ -4,5 +4,10 @@
 -- vim.opt.clipboard = 'unnamedplus'
 
 vim.g.dap_home = os.getenv 'HOME' .. '/src/'
+vim.g.incline_config = {
+  hide = {
+    cursorline = true,
+  }
+}
 
 require 'user.font'
