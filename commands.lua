@@ -1,3 +1,4 @@
--- add your personal keymaps here to avoid conflicts
---   do not check changes to this file into the upstream branch!
--- local map = require '../utils.map'
+-- This will run after all plugins are loaded and the UI is stable.
+vim.defer_fn(function()
+  vim.cmd 'redraw'
+end, 1000)
